@@ -1,12 +1,51 @@
-<!doctype html>
+{% load static %}
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" name="description" content="GYM" />
+    <link rel="stylesheet" href="{% static 'gym/css/style.css' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forge Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
   </head>
-
   <body>
-    <h1>Forge Fitness</h1>
-
-    <p>If you're seeing this, Django templates are working!</p>
+    <nav>
+      <div class="logo">Forge Fitness</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#pricing">Membership</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Forge Fitness</h1>
+        <p>Built Through Discipline</p>
+        <div class="hero-buttons">
+          <a href="#pricing" class="primary-button">Join Now</a>
+          <a href="#programs" class="secondary-button">Explore Programs</a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+    </section>
+    <section id="programs">
+      <h2>Programs</h2>
+    </section>
+    <section id="trainers">
+      <h2>Our Trainers</h2>
+    </section>
+    <section id="pricing">
+      <h2>Membership</h2>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+    </section>
   </body>
 </html>
